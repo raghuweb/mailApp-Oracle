@@ -6,7 +6,7 @@ public class RegisterUser {
 	static int status = 0;
 
 	public static int register(String email, String password, String name,
-			String gender, Double mname, String country) {
+			String gender, String mname, String country) {
 		// public static int register(String email,String password,String
 		// gender,String country,String name){
 
@@ -18,7 +18,7 @@ public class RegisterUser {
 			ps.setString(2, password);
 			ps.setString(3, name);
 			ps.setString(4, gender);
-			ps.setDouble(5, mname);
+			ps.setString(5, mname);
 			ps.setString(6, country);
 
 			status = ps.executeUpdate();
